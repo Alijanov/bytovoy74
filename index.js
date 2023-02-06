@@ -158,7 +158,11 @@ const burger = document.querySelector(".burger");
 const sidebar_container = document.querySelector(".sidebar_container");
 
 burger.addEventListener("click", () => {
-  sidebar_container.classList.add("sidebar_opened");
+  if (sidebar_container.classList.contains("sidebar_opened")) {
+    sidebar_container.classList.remove("sidebar_opened");
+  } else {
+    sidebar_container.classList.toggle("sidebar_opened");
+  }
 });
 
 sidebar_container.addEventListener("click", () => {
