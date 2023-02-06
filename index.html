@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бытовой74 - скупка бытовой техники в Челябинске</title>
+    <link rel="icon" href="./assets/logo.svg" />
+    <link rel="stylesheet" href="./styles/button.css" />
+    <link rel="stylesheet" href="./styles/text.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script defer src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="header_content">
+        <a href="/">
+          <img src="./assets/logo.svg" alt="Logo" />
+        </a>
+
+        <nav class="header_nav nav">
+          <a href="/"> Главная </a>
+          <a href="#services"> Услуги </a>
+          <!-- <a href="#comments"> Отзывы </a> -->
+          <a href="#contacts"> Контакты </a>
+        </nav>
+
+        <div class="header_button_container">
+          <button class="header_button btn main_btn btn_with_icon">
+            <img src="./assets/file.svg" alt="request" />
+            <span class="header_button_text"> Оставить заявку </span>
+          </button>
+        </div>
+
+        <div class="tablet_down_btn">
+          <div class="burger"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar_container">
+      <nav class="sidebar">
+        <ul>
+          <li>
+            <a href="/"> Главная </a>
+          </li>
+          <li>
+            <a href="#services"> Услуги </a>
+          </li>
+          <li>
+            <a href="#contacts"> Контакты </a>
+          </li>
+        </ul>
+
+        <div class="sidebar_extra">
+          <div class="sidebar_extra_upper">
+            <span class="sidebar_extra_time"
+              >Время работы 8:00 - 22:00 (без выходных)</span
+            >
+            <span class="sidebar_extra_number">8 (123) 123-45-67</span>
+          </div>
+
+          <div class="sidebar_extra_bottom">
+            <button class="header_button btn main_btn btn_with_icon">
+              <img src="./assets/file.svg" alt="request" />
+              <span class="header_button_text"> Оставить заявку </span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section class="hero colored_section">
+      <div class="hero_container">
+        <div class="hero_left">
+          <span class="sub-title">БЫСТРО И ПРОСТО</span>
+          <span class="title">ВЫКУП БЫТОВОЙ ТЕХНИКИ</span>
+          <div class="client_number">
+            <input
+              class="client_number_request"
+              placeholder="+7 (999) 000-00-00"
+              type="tel"
+              onkeypress="return onlyNumberKey(event)"
+            />
+            <button class="order_button btn secondary_btn">Заказать</button>
+          </div>
+        </div>
+
+        <img
+          class="hero_img"
+          src="./assets/hero_photo.png"
+          alt="man_carrying_boxes"
+        />
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="services_content">
+        <div class="section_header">
+          <span class="section_title title"> Чем мы занимаемся? </span>
+          <span class="section_sub_title sub_title">
+            Приоритетным направлением деятельности нашей компании является выкуп
+            бытовой техники.
+          </span>
+        </div>
+
+        <div class="services_main">
+          <div class="service_card">
+            <div class="card_header">
+              <span class="card_header_text">Выкуп стиральных машин</span>
+            </div>
+            <div class="card_main">
+              <div class="main_disadvantages">
+                <span class="main_disadvantage_item">Не сливает </span>
+                <span class="main_disadvantage_item">Долго стирает </span>
+                <span class="main_disadvantage_item">Протекает</span>
+                <span class="main_disadvantage_item">Не отжимает</span>
+                <span class="main_disadvantage_item">Не влючается </span>
+                <span class="main_disadvantage_item">Сильно шумит</span>
+              </div>
+              <img class="main_image" src="./assets/wash.png" alt="wash" />
+            </div>
+          </div>
+          <!-- /.service_card -->
+          <div class="service_card">
+            <div class="card_header">
+              <span class="card_header_text">Выкуп хлодильников</span>
+            </div>
+            <div class="card_main">
+              <div class="main_disadvantages">
+                <span class="main_disadvantage_item">Не морозит</span>
+                <span class="main_disadvantage_item">Гудит и шумит</span>
+                <span class="main_disadvantage_item">Не отключается</span>
+                <span class="main_disadvantage_item">Вода внутри</span>
+                <span class="main_disadvantage_item">Не холодит </span>
+                <span class="main_disadvantage_item">Намерзает лед</span>
+              </div>
+              <img class="main_image" src="./assets/fridge.png" alt="fridge" />
+            </div>
+          </div>
+          <!-- /.service_card -->
+          <div class="service_card">
+            <div class="card_header">
+              <span class="card_header_text">Выкуп посудомоечных машин</span>
+            </div>
+            <div class="card_main">
+              <div class="main_disadvantages">
+                <span class="main_disadvantage_item">Плохо моет</span>
+                <span class="main_disadvantage_item">Не набирает воды</span>
+                <span class="main_disadvantage_item">Отключается</span>
+                <span class="main_disadvantage_item">Не сливает</span>
+                <span class="main_disadvantage_item">Течет</span>
+                <span class="main_disadvantage_item">Не светится</span>
+              </div>
+              <img class="main_image" src="./assets/dryer.png" alt="dryer" />
+            </div>
+          </div>
+          <!-- /.service_card -->
+        </div>
+      </div>
+    </section>
+
+    <section class="request_form colored_section section" id="contacts">
+      <div class="request_form_content">
+        <div class="section_header">
+          <span class="section_title title"> Оставьте заявку </span>
+          <span class="section_sub_title sub_title">
+            Мы открыты для любых ваших предложений и с нетерпением ждем вашей
+            заявки в ближайшее время.
+          </span>
+        </div>
+
+        <form
+          class="request_form_main"
+          action="https://sheetdb.io/api/v1/7s32kmgovjojz"
+          method="post"
+          id="sheet_form"
+        >
+          <input
+            class="request_form_name"
+            name="data[имя]"
+            type="text"
+            placeholder="Ваше имя"
+          />
+          <input
+            class="request_form_phone"
+            name="data[телефон]"
+            placeholder="Телефон"
+            required
+            type="tel"
+            onkeypress="return onlyNumberKey(event)"
+          />
+          <textarea
+            class="request_form_comment"
+            placeholder="Дополнительная информация для оценки: Укажите марку, модель, состояние,год, желаемую цену"
+            name="data[комментарий]"
+          ></textarea>
+
+          <input
+            type="file"
+            class="btn outlined_btn btn_with_icon"
+            id="photography_upload"
+            name="data[фото]"
+            accept="image/png, image/jpeg"
+          />
+          <label for="photography_upload">
+            <img src="./assets/upload.svg" alt="Загрузить фотографию" />
+            <span class="btn_text"> Загрузить фотографию </span>
+          </label>
+
+          <button type="submit" class="btn secondary_btn">
+            Отправить заявку
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <div class="loader_container">
+      <div class="loader"></div>
+    </div>
+
+    <div class="pop_up_container">
+      <div class="pop_up">
+        <div class="pop_up_content">
+          <div class="pop_up_content_header">
+            <img
+              class="pop_up_close"
+              src="./assets/close.svg"
+              alt="close_icon"
+            />
+          </div>
+
+          <div class="pop_up_content_main">
+            <div class="pop_up_content_main_img_container"></div>
+            <div class="pop_up_container_main_text">
+              <span class="main_text_title"></span>
+              <span class="main_text_sub_title"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
